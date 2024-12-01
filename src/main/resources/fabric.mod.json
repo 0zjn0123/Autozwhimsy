@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "autozwhimsy",
+  "version": "${version}",
+  "name": "AutozWhimsy",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/autozwhimsy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.autoz.autozwhimsy.client.AutozwhimsyClient"
+    ],
+    "main": [
+      "org.autoz.autozwhimsy.Autozwhimsy"
+    ]
+  },
+  "mixins": [
+    "autozwhimsy.mixins.json",
+    {
+      "config": "autozwhimsy.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
