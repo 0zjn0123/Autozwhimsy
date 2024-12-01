@@ -1,9 +1,9 @@
 {
-  "itemGroup.autozwhimsy.autozwhims_group": "Autozwhimsy",
+  "itemGroup.autozwhimsy.autozwhimsy_group": "Autozwhimsy",
   "item.autozwhimsy.autozfooditem": "Autoz",
   "block.autozwhimsy.autoz_block": "Autoz Block",
   "itemTooltip.autozwhimsy.autozfooditem": "UP:Autoz",
   "death.attack.dabiankill": "%1$s was killed by Dabian",
-  "item.autozwhimsy.kill_tool": "kill me tool",
-  "item.autozwhimsy.die_tool.tooltip": "One-click suicide designed for people who can't take their own lives"
+  "item.autozwhimsy.die_tool": "kill me tool",
+  "itemTooltip.autozwhimsy.die_tool": "One-click suicide designed for people who can't take their own lives"
 }

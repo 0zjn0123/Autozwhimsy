@@ -5,9 +5,11 @@ import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
@@ -24,7 +26,7 @@ public abstract class DieTool extends Item {
     }
     public static final RegistryKey<DamageType> DABIANKILL_DAMAGE = RegistryKey.of(RegistryKeys.DAMAGE_TYPE, Identifier.of("autozwhimsy", "dabiankill"));
 
-    public static final Item DIE_TOOL = registerItems("die_tool", new DieTool(new Item.Settings()) {
+    public static final Item DIE_TOOL = registerItems("die_tool", new Item(new Item.Settings()) {
         public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
 //            if (world.isClient()) {
 //                return TypedActionResult.pass(user.getStackInHand(hand));
@@ -36,8 +38,8 @@ public abstract class DieTool extends Item {
             return TypedActionResult.success(user.getStackInHand(hand));
         }
         @Override
-        public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-            tooltip.add(Text.translatable("item.autozwhimsy.die_tool.tooltip"));
+        public void appendTooltip(ItemStack itemStack, Item.TooltipContext context, List<Text> tooltip, TooltipType type){
+            tooltip.add(Text.translatable("itemTooltip.autozwhimsy.die_tool").formatted(Formatting.GOLD));
         }
     });
     public static void initialize() {

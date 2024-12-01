@@ -1,9 +1,9 @@
 {
-  "itemGroup.autozwhimsy.autozwhims_group": "Autozwhimsy",
+  "itemGroup.autozwhimsy.autozwhimsy_group": "Autoz的奇思妙想",
   "item.autozwhimsy.autozfooditem": "Autoz",
   "block.autozwhimsy.autoz_block": "Autoz方块",
   "itemTooltip.autozwhimsy.autozfooditem": "UP:Autoz",
   "death.attack.dabiankill": "%1$sl被答编之力杀死了",
-  "item.autozwhimsy.kill_tool": "紫砂工具",
-  "item.autozwhimsy.die_tool.tooltip": "一键紫砂专为无法紫砂的人设计"
+  "item.autozwhimsy.die_tool": "紫砂工具",
+  "itemTooltip.autozwhimsy.die_tool": "一键紫砂专为无法紫砂的人设计"
 }
